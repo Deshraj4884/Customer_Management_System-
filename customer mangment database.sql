@@ -1,0 +1,12 @@
+create database customer_managment;
+use customer_managment;
+create table admins(admin_id varchar(255),admin_pw varchar(255),primary key(admin_id));
+insert into admins values('DR001','deshraj123');
+create table customer_detials(Date_of_join varchar(255),customer_id varchar(255),customer_pw varchar(255),costumer_name varchar(255),age varchar(255),gender varchar(255),email varchar(255),address varchar(255),Comment_via_Admin varchar(255),primary key(customer_id));
+insert into customer_detials values('','AS001','annu123','anjali saini','22','female','annu4884@gmail.com','dheli','');
+select * from admins;
+create table Comments(customer_id varchar(255),comments varchar(255),primary key(customer_id));
+insert into Comments values ('AS001','OK');
+select * from customer_detials;
+select * from Comments;
+update customer_detials set address='female' where customer_id='DS002';
